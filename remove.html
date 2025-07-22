@@ -7,15 +7,15 @@
 </head>
 <body>
 <!-- remove html parent element -->
- <!-- <div id="main">
+ <div id="main">
     <h1>THIS</h1>
     <h1>IS</h1>
     <h1>A</h1>
     <h1>REMOVE</h1>
 </div>
-<button onclick="removeItem()">remove</button> -->
+<button onclick="removeItem()">remove</button>
 
-<!-- remove child in parent div -->
+<!-- remove child in parent div-->
 <div>
     <h1>Hello</h1>
     <h1>codes</h1>
@@ -24,11 +24,11 @@
 </div>
 <button onclick="removeBtn()">remove</button>
 <script>
-// function removeItem(){
-// const main=document.getElementById('main')
-// const removeMain=main.children[0]
-// main.removeChild(removeMain)
-// }
+function removeItem(){
+const main=document.getElementById('main')
+const removeMain=main.children[0]
+main.removeChild(removeMain)
+}
 function removeBtn()
 {
      const grouptag=document.getElementById('grouptag')

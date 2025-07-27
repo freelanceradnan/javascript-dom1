@@ -6,91 +6,91 @@
     <title>js event dom</title>
 </head>
 <body>
-<!-- onclick -->
- <!-- <button onclick="alert('success')">click me!</button> -->
+<!-- onclick --> -->
+<button onclick="alert('success')">click me!</button>
 
 <!-- mouseover -->
- <!-- <div id="box" style="height: 200px;width: 300px;background-color: green;">mouse over now!</div>-->
+ <div id="box" style="height: 200px;width: 300px;background-color: green;">mouse over now!</div>
 
 <!-- mouseout -->
- <!-- <div id="box" style="height: 200px;width:400px;background:green;font-size:30px;font-weight: bold;">mouse out boxed!</div> -->
+ <div id="box" style="height: 200px;width:400px;background:green;font-size:30px;font-weight: bold;">mouse out boxed!</div>
 
  <!-- keyup-event -->
-  <!-- <input type="text" id="itemInput" placeholder="enter a text">
-  <div id="output"></div> -->
+  <input type="text" id="itemInput" placeholder="enter a text">
+  <div id="output"></div>
 
 <!-- keydown -->
- <!-- <input type="text" id="inputItem" placeholder="enter a text">
- <div id="output"></div> -->
+ <input type="text" id="inputItem" placeholder="enter a text">
+ <div id="output"></div>
 
  <!-- submit -->
-<!-- <form id="myForm">
+<form id="myForm">
     <input type="text" id="itemInput" placeholder="enter you input">
     <button>submit</button>
-</form> -->
+</form>
 
 <!-- focus -->
- <!-- <input type="text" id="itemInput" placeholder="enter you text">
-<div id="messege"></div> -->
+ <input type="text" id="itemInput" placeholder="enter you text">
+<div id="messege"></div>
 
 <!-- blur -->
- <!-- <input type="text" id="itemInput" placeholder="enter your text">
- <div id="messege"></div> -->
-<!-- <select id="select">
+ <input type="text" id="itemInput" placeholder="enter your text">
+ <div id="messege"></div>
+<select id="select">
     <option value="css">css</option>
     <option value="html">html</option>
     <option value="js">js</option>
    
 </select>
-<div id="result"></div> -->
+<div id="result"></div>
 <script>
-    // let box=document.getElementById('box')
-    // box.addEventListener('mouseover',()=>{
-    //     box.style.background='pink'
-    // })
-    // let box=document.getElementById('box')
-    // box.addEventListener('mouseout',()=>{
-    //     box.style.background="pink"
-    // })
-// let input=document.getElementById('itemInput')
-// let output=document.getElementById('output')
-// input.addEventListener('keyup',()=>{
-//     output.innerText=input.value
-// })
-// let input=document.getElementById('inputItem')
-// let output=document.getElementById('output')
-// input.addEventListener('keydown',()=>
-// {
-//     output.innerText=input.value
-// })
+    let box=document.getElementById('box')
+    box.addEventListener('mouseover',()=>{
+        box.style.background='pink'
+    })
+    let box=document.getElementById('box')
+    box.addEventListener('mouseout',()=>{
+        box.style.background="pink"
+    })
+let input=document.getElementById('itemInput')
+let output=document.getElementById('output')
+input.addEventListener('keyup',()=>{
+    output.innerText=input.value
+})
+let input=document.getElementById('inputItem')
+let output=document.getElementById('output')
+input.addEventListener('keydown',()=>
+{
+    output.innerText=input.value
+})
 
-// const myForm=document.getElementById('myForm')
-// myForm.addEventListener('submit',(e)=>{
-//     e.preventDefault()//no page load
-//     alert('success')
-// })
-// let inputItem=document.getElementById('itemInput')
-// let messege=document.getElementById('messege')
+const myForm=document.getElementById('myForm')
+myForm.addEventListener('submit',(e)=>{
+    e.preventDefault()//no page load
+    alert('success')
+})
+let inputItem=document.getElementById('itemInput')
+let messege=document.getElementById('messege')
 
-// inputItem.addEventListener('focus',()=>{
-//     messege.innerText='clicked in input field'
-//     messege.style.color='red'
-// })
-// let input=document.getElementById('itemInput')
-// let messege=document.getElementById('messege')
-// input.addEventListener('blur',()=>{
-//   if(input.value.trim()===""){
-//     messege.innerText='Email is required'
-//   }
-//   else{
-//     messege.innerText=""
-//   }
-// })
-// let select=document.getElementById('select')
-// let result=document.getElementById('result')
-// select.addEventListener('change',function(){
-//     result.innerText=select.value
-// })
+inputItem.addEventListener('focus',()=>{
+    messege.innerText='clicked in input field'
+    messege.style.color='red'
+})
+let input=document.getElementById('itemInput')
+let messege=document.getElementById('messege')
+input.addEventListener('blur',()=>{
+  if(input.value.trim()===""){
+    messege.innerText='Email is required'
+  }
+  else{
+    messege.innerText=""
+  }
+})
+let select=document.getElementById('select')
+let result=document.getElementById('result')
+select.addEventListener('change',function(){
+    result.innerText=select.value
+})
 
 window.addEventListener('load',()=>{
     console.log('page loaded')

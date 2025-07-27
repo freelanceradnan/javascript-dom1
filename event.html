@@ -24,10 +24,14 @@
  <div id="output"></div> -->
 
  <!-- submit -->
-<form id="myForm">
+<!-- <form id="myForm">
     <input type="text" id="itemInput" placeholder="enter you input">
     <button>submit</button>
-</form>
+</form> -->
+
+<!-- focus -->
+ <input type="text" id="itemInput" placeholder="enter you text">
+<div id="messege"></div>
 
 <script>
     // let box=document.getElementById('box')
@@ -50,9 +54,17 @@
 //     output.innerText=input.value
 // })
 
-const myForm=document.getElementById('myForm')
-myForm.addEventListener('submit',(e)=>{
-    e.preventDefault()//no page load
+// const myForm=document.getElementById('myForm')
+// myForm.addEventListener('submit',(e)=>{
+//     e.preventDefault()//no page load
+//     alert('success')
+// })
+let inputItem=document.getElementById('itemInput')
+let messege=document.getElementById('messege')
+
+inputItem.addEventListener('focus',()=>{
+    messege.innerText='clicked in input field'
+    messege.style.color='red'
 })
 </script>
 </body>

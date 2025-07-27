@@ -10,12 +10,18 @@
  <!-- <button onclick="alert('success')">click me!</button> -->
 
 <!-- mouseover -->
- <div id="box" style="height: 200px;width: 300px;background-color: green;">mouse over now!</div>
+ <!-- <div id="box" style="height: 200px;width: 300px;background-color: green;">mouse over now!</div>-->
 
+<!-- mouseout -->
+ <div id="box" style="height: 200px;width:400px;background:green;font-size:30px;font-weight: bold;">mouse out boxed!</div>
 <script>
+    // let box=document.getElementById('box')
+    // box.addEventListener('mouseover',()=>{
+    //     box.style.background='pink'
+    // })
     let box=document.getElementById('box')
-    box.addEventListener('mouseover',()=>{
-        box.style.background='pink'
+    box.addEventListener('mouseout',()=>{
+        box.style.background="pink"
     })
 </script>
 </body>

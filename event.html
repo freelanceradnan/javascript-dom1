@@ -7,6 +7,16 @@
 </head>
 <body>
 <!-- onclick -->
- <button onclick="alert('success')">click me!</button>
+ <!-- <button onclick="alert('success')">click me!</button> -->
+
+<!-- mouseover -->
+ <div id="box" style="height: 200px;width: 300px;background-color: green;">mouse over now!</div>
+
+<script>
+    let box=document.getElementById('box')
+    box.addEventListener('mouseover',()=>{
+        box.style.background='pink'
+    })
+</script>
 </body>
 </html>

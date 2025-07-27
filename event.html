@@ -34,9 +34,15 @@
 <div id="messege"></div> -->
 
 <!-- blur -->
- <input type="text" id="itemInput" placeholder="enter your text">
- <div id="messege"></div>
-
+ <!-- <input type="text" id="itemInput" placeholder="enter your text">
+ <div id="messege"></div> -->
+<select id="select">
+    <option value="css">css</option>
+    <option value="html">html</option>
+    <option value="js">js</option>
+   
+</select>
+<div id="result"></div>
 <script>
     // let box=document.getElementById('box')
     // box.addEventListener('mouseover',()=>{
@@ -70,15 +76,20 @@
 //     messege.innerText='clicked in input field'
 //     messege.style.color='red'
 // })
-let input=document.getElementById('itemInput')
-let messege=document.getElementById('messege')
-input.addEventListener('blur',()=>{
-  if(input.value.trim()===""){
-    messege.innerText='Email is required'
-  }
-  else{
-    messege.innerText=""
-  }
+// let input=document.getElementById('itemInput')
+// let messege=document.getElementById('messege')
+// input.addEventListener('blur',()=>{
+//   if(input.value.trim()===""){
+//     messege.innerText='Email is required'
+//   }
+//   else{
+//     messege.innerText=""
+//   }
+// })
+let select=document.getElementById('select')
+let result=document.getElementById('result')
+select.addEventListener('change',function(){
+    result.innerText=select.value
 })
 </script>
 </body>

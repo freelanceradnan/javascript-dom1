@@ -20,8 +20,15 @@
   <div id="output"></div> -->
 
 <!-- keydown -->
- <input type="text" id="inputItem" placeholder="enter a text">
- <div id="output"></div>
+ <!-- <input type="text" id="inputItem" placeholder="enter a text">
+ <div id="output"></div> -->
+
+ <!-- submit -->
+<form id="myForm">
+    <input type="text" id="itemInput" placeholder="enter you input">
+    <button>submit</button>
+</form>
+
 <script>
     // let box=document.getElementById('box')
     // box.addEventListener('mouseover',()=>{
@@ -36,11 +43,16 @@
 // input.addEventListener('keyup',()=>{
 //     output.innerText=input.value
 // })
-let input=document.getElementById('inputItem')
-let output=document.getElementById('output')
-input.addEventListener('keydown',()=>
-{
-    output.innerText=input.value
+// let input=document.getElementById('inputItem')
+// let output=document.getElementById('output')
+// input.addEventListener('keydown',()=>
+// {
+//     output.innerText=input.value
+// })
+
+const myForm=document.getElementById('myForm')
+myForm.addEventListener('submit',(e)=>{
+    e.preventDefault()//no page load
 })
 </script>
 </body>

@@ -13,16 +13,26 @@
  <!-- <div id="box" style="height: 200px;width: 300px;background-color: green;">mouse over now!</div>-->
 
 <!-- mouseout -->
- <div id="box" style="height: 200px;width:400px;background:green;font-size:30px;font-weight: bold;">mouse out boxed!</div>
+ <!-- <div id="box" style="height: 200px;width:400px;background:green;font-size:30px;font-weight: bold;">mouse out boxed!</div> -->
+
+ <!-- keyup-event -->
+  <input type="text" id="itemInput" placeholder="enter a text">
+  <div id="output"></div>
 <script>
     // let box=document.getElementById('box')
     // box.addEventListener('mouseover',()=>{
     //     box.style.background='pink'
     // })
-    let box=document.getElementById('box')
-    box.addEventListener('mouseout',()=>{
-        box.style.background="pink"
-    })
+    // let box=document.getElementById('box')
+    // box.addEventListener('mouseout',()=>{
+    //     box.style.background="pink"
+    // })
+let input=document.getElementById('itemInput')
+let output=document.getElementById('output')
+input.addEventListener('keyup',()=>{
+    output.innerText=input.value
+})
+
 </script>
 </body>
 </html>

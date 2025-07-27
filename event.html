@@ -36,13 +36,13 @@
 <!-- blur -->
  <!-- <input type="text" id="itemInput" placeholder="enter your text">
  <div id="messege"></div> -->
-<select id="select">
+<!-- <select id="select">
     <option value="css">css</option>
     <option value="html">html</option>
     <option value="js">js</option>
    
 </select>
-<div id="result"></div>
+<div id="result"></div> -->
 <script>
     // let box=document.getElementById('box')
     // box.addEventListener('mouseover',()=>{
@@ -86,10 +86,21 @@
 //     messege.innerText=""
 //   }
 // })
-let select=document.getElementById('select')
-let result=document.getElementById('result')
-select.addEventListener('change',function(){
-    result.innerText=select.value
+// let select=document.getElementById('select')
+// let result=document.getElementById('result')
+// select.addEventListener('change',function(){
+//     result.innerText=select.value
+// })
+
+window.addEventListener('load',()=>{
+    console.log('page loaded')
+})
+window.addEventListener('resize',()=>{
+    console.log('page loaded')
+})
+
+window.addEventListener('scroll',()=>{
+    console.log('page loaded')
 })
 </script>
 </body>

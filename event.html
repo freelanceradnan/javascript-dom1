@@ -30,8 +30,12 @@
 </form> -->
 
 <!-- focus -->
- <input type="text" id="itemInput" placeholder="enter you text">
-<div id="messege"></div>
+ <!-- <input type="text" id="itemInput" placeholder="enter you text">
+<div id="messege"></div> -->
+
+<!-- blur -->
+ <input type="text" id="itemInput" placeholder="enter your text">
+ <div id="messege"></div>
 
 <script>
     // let box=document.getElementById('box')
@@ -59,12 +63,22 @@
 //     e.preventDefault()//no page load
 //     alert('success')
 // })
-let inputItem=document.getElementById('itemInput')
-let messege=document.getElementById('messege')
+// let inputItem=document.getElementById('itemInput')
+// let messege=document.getElementById('messege')
 
-inputItem.addEventListener('focus',()=>{
-    messege.innerText='clicked in input field'
-    messege.style.color='red'
+// inputItem.addEventListener('focus',()=>{
+//     messege.innerText='clicked in input field'
+//     messege.style.color='red'
+// })
+let input=document.getElementById('itemInput')
+let messege=document.getElementById('messege')
+input.addEventListener('blur',()=>{
+  if(input.value.trim()===""){
+    messege.innerText='Email is required'
+  }
+  else{
+    messege.innerText=""
+  }
 })
 </script>
 </body>
